@@ -1,0 +1,15 @@
+version: "3.4"
+services:
+    natlog_city1:
+        build: .
+        ports: 
+            - "10200:514/udp"
+        volumes:
+            - /usr/data/city1:/usr/data
+
+    natlog_city2:
+        build: .
+        ports: 
+            - "10201:514/udp"
+        volumes:
+            - /usr/data/city2:/usr/data

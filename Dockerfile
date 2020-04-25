@@ -12,3 +12,4 @@ RUN mkdir -p /usr/data
 EXPOSE 514/tcp 514/udp
 
 CMD ["/usr/sbin/rsyslogd", "-n"]
+#CMD	["/usr/sbin/rsyslogd", "-n", "-f /etc/rsyslog.conf"]
